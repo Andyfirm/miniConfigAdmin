@@ -1,0 +1,122 @@
+{
+  "易思普": {
+    "baseURL": "https://147soft.cn:8282/miniManagementSystem/",
+    "navURL": "https://www.147soft.cn/",
+    "imgURL": "https://images.147soft.cn/"
+  },
+  "易思普测试": {
+    "baseURL": "https://www.147soft.cn/managementSystemTest/",
+    "navURL": "https://www.147soft.cn/",
+    "imgURL": "https://www.147soft.cn:8092/"
+  },
+  "滁州正华": {
+    "baseURL": "https://www.hcty.ltd/managementSystem/",
+    "navURL": "https://www.hcty.ltd/",
+    "imgURL": "https://www.hcty.ltd:8092/"
+  },
+  "中联": {
+    "baseURL": "https://zlesp.zlydgy.cn:443/managementSystem/",
+    "navURL": "https://zlesp.zlydgy.cn/",
+    "imgURL": "https://zlesp.zlydgy.cn:8092"
+  },
+  "中联测试": {
+    "baseURL": "https://zlesp.zlydgy.cn:443/managementSystemTest/",
+    "navURL": "https://zlesp.zlydgy.cn/",
+    "imgURL": "https://zlesp.zlydgy.cn:8092"
+  },
+  "武汉": {
+    "baseURL": "https://www.wuhansport.com/managementSystem/",
+    "navURL": "https://www.wuhansport.com/",
+    "imgURL": "https://www.wuhansport.com:8092/"
+  },
+  "厦门": {
+    "baseURL": "https://card.xmgrwhg.org/managementSystem/",
+    "navURL": "https://card.xmgrwhg.org/",
+    "imgURL": "https://card.xmgrwhg.org:8092/"
+  },
+  "广安门": {
+    "baseURL": "https://www.ser666.cn/managementSystem/",
+    "navURL": "https://www.ser666.cn/",
+    "imgURL": "https://www.ser666.cn:8092/"
+  },
+  "宝马健身": {
+    "baseURL": "https://www.dooop.top/managementSystem/",
+    "navURL": "https://www.dooop.top/",
+    "imgURL": "https://www.dooop.top:8092/"
+  },
+  "北外": {
+    "baseURL": "https://gymvip.bfsu.edu.cn/managementSystem/",
+    "navURL": "https://gymvip.bfsu.edu.cn/",
+    "imgURL": "https://gymvip.bfsu.edu.cn/"
+  },
+  "河北政法学院": {
+    "baseURL": "https://tyg.helc.edu.cn/managementSystem/",
+    "navURL": "https://tyg.helc.edu.cn/",
+    "imgURL": "https://tyg.helc.edu.cn:8092/"
+  },
+  "长沙湘潭羽毛球馆": {
+    "baseURL": "https://h.wx.hnlyf.com/managementSystem/",
+    "navURL": "https://h.wx.hnlyf.com/",
+    "imgURL": "https://h.wx.hnlyf.com:8092/"
+  },
+  "南翔健身": {
+    "baseURL": "https://abc.nanxiangwuliu.com/managementSystem/",
+    "navURL": "https://abc.nanxiangwuliu.com/",
+    "imgURL": "https://abc.nanxiangwuliu.com:8092/"
+  },
+  "长沙大唐": {
+    "baseURL": "https://xb.csdjsoft.top/managementSystem/",
+    "navURL": "https://xb.csdjsoft.top/",
+    "imgURL": "https://xb.csdjsoft.top:8092/"
+  },
+  "电子科大": {
+    "baseURL": "http://10.20.26.123:8086/managementSystem/",
+    "navURL": "http://10.20.26.123:8086/",
+    "imgURL": "http://10.20.26.123:8092/"
+  },
+  "延安全民健身运动中心": {
+    "baseURL": "https://ya.147soft.cn/managementSystem/",
+    "navURL": "https://ya.147soft.cn/",
+    "imgURL": "https://ya.147soft.cn:8092/"
+  },
+  "交控科技": {
+    "baseURL": "https://jianshen.bj-tct.com/managementSystem/",
+    "navURL": "https://jianshen.bj-tct.com/",
+    "imgURL": "https://jianshen.bj-tct.com:38092/"
+  },
+  "吉林大学": {
+    "baseURL": "http://59.72.0.165/managementSystem/",
+    "navURL": "https://www.147soft.cn/",
+    "imgURL": "http://59.72.0.165:8080/"
+  },
+  "线上测试": {
+    "baseURL": "https://cs.xmgrwhg.org/managementSystem/",
+    "navURL": "https://cs.xmgrwhg.org/",
+    "imgURL": "https://cs.xmgrwhg.org:8092/"
+  },
+  "党召本地": {
+    "baseURL": "http://192.168.1.223:8092/managementSystem/",
+    "navURL": "https://192.168.1.223:8092/",
+    "imgURL": "https://www.147soft.cn:8092/"
+  },
+  "刘厚林本地": {
+    "baseURL": "http://192.168.1.77:8092/managementSystem/",
+    "navURL": "https://192.168.1.223:8092/",
+    "imgURL": "https://www.147soft.cn:8092/"
+  },
+  "赵益祥本地": {
+    "baseURL": "http://192.168.1.97:8092/managementSystem/",
+    "navURL": "https://192.168.1.223:8092/",
+    "imgURL": "https://www.147soft.cn:8092/"
+  },
+  "郭亚飞本地": {
+    "baseURL": "http://192.168.1.106:8092/managementSystem/",
+    "navURL": "https://192.168.1.223:8092/",
+    "imgURL": "https://www.147soft.cn:8092/"
+  },
+  "郭亚飞本地ios": {
+    "baseURL": "http://192.168.2.204:8092/managementSystem/",
+    "navURL": "https://192.168.1.223:8092/",
+    "imgURL": "https://www.147soft.cn:8092/"
+  }
+}

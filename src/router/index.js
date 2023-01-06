@@ -4,26 +4,55 @@ import HomeView from '../views/HomeView.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
+// 解决编程式路由往同一地址跳转时会报错的情况
+const originalPush = VueRouter.prototype.push
+const originalReplace = VueRouter.prototype.replace
+
+// push
+VueRouter.prototype.push = function push(location, onResolve, onReject) {
+  if (onResolve || onReject)
+    return originalPush.call(this, location, onResolve, onReject)
+  return originalPush.call(this, location).catch(err => err)
+};
+
+//replace
+VueRouter.prototype.replace = function push(location, onResolve, onReject) {
+  if (onResolve || onReject)
+    return originalReplace.call(this, location, onResolve, onReject)
+  return originalReplace.call(this, location).catch(err => err)
+}
+
+export const constantRouterMap = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView,
+    hidden: true,
+    children: [
+      {
+        path: '/',
+        name: 'commonHome',
+        hidden: true,
+        component: () => import(/* webpackChunkName: "commonHome" */ '../views/commonHome/commonHome.vue')
+      }
+    ]
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/login',
+    name: 'login',
+    hidden: true,
+    component: () => import(/* webpackChunkName: "login" */ '../views/LoginView.vue')
   }
 ]
 
+export const asyncRouterRootMap = [
+
+]
+
 const router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes: constantRouterMap
 })
 
 export default router
