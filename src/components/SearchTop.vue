@@ -1,6 +1,7 @@
 <template>
   <!-- 一行最多展示4个的模式 -->
   <el-row style="margin-bottom:20px;" v-if="showNum <= 4">
+    <!-- 场馆 -->
     <el-col :span="4" v-if="showTypeObj.shopNum&&showShop">
       <el-select
         size="small"
@@ -86,10 +87,6 @@ import { getShops } from '../api/index'
 export default {
   name: 'SearchTop',
   props: {
-    onlyShopNum: { // 是否仅显示查询分店
-      type: Boolean,
-      default: true
-    },
     showAdd: { // 是否展示新增
       type: Boolean,
       default: true

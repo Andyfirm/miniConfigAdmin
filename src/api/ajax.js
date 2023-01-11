@@ -2,7 +2,7 @@ import axios from 'axios'
 import Qs from 'qs'
 import { MessageBox } from 'element-ui'
 import config from '../configUrl.json'
-
+import router from '../router/index'
 const service = axios.create({
   timeout: 200000 // 请求超时时间
 })
@@ -37,7 +37,7 @@ service.interceptors.response.use(
       }).then(() => {
         sessionStorage.clear()
         sessionStorage.setItem("flag", 0)
-        this.$router.push({path:'/login'})
+        router.push("/login")
       })
     }
     return res

@@ -27,3 +27,14 @@ export const insertUser = (data) => ajax('/employee/insertUser', data, 'post') /
 export const updateUser = (data) => ajax('/user/updateUser', data, 'post') // 修改角色信息
 export const updateUserMobile = (data) => ajax('/user/updateUserMobile', data, 'post') // 修改用户绑定手机号
 export const updateUserRole = (data) => ajax('/employee/updateUserRole', data, 'post') // 修改用户角色
+export const getInfERole = (data) => ajax('/infe/getInfERole', data) // 查询员工角色信息
+export const getEmployeeConfigInfo = (data) => ajax('/configFunction/getEmployeeConfigInfo', data) // 查询员工已配置信息
+export const insertERole = (data) => ajax('/infe/insertERole', data, 'post') // 新增员工角色
+export const updateInfERole = (data) => ajax('/infe/updateInfERole', data, 'post') // 修改员工角色信息
+export const getInfEInfo = (data) => ajax('/infe/getInfEInfo', data) // 查询所有员工信息
+export const getEJtInfo = (data) => ajax('/infe/getEJtInfo', data) // 查询教练信息
+export const updateEUserRole = (data) => ajax('/infe/updateEUserRole', data, 'post') // 配置员工角色
+export const updateEUserPassword = (data) => ajax('/infe/updateEUserPassword', data, 'post') // 修改员工密码
+export const updateEJtInfo = (data) => ajax('/infe/updateEJtInfo', data, 'post', {contentType: 'multipart/form-data'}) // 编辑员工信息-教练
+export const getEBreakTime = (data) => ajax('/infe/getEBreakTime', data) // 查询教练休息时间
+export const insertEBreakTime = (data) => ajax('/infe/insertEBreakTime', data, 'post') // 新增教练休息时间

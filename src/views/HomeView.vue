@@ -40,8 +40,8 @@ export default {
   .el-aside {
     // color: #fff;
     // background-color: #0087c4;
-    color: #333;
-    background-color: #FAFBFC;
+    color: #fff;
+    background-color: #fff;
     border-right: 1px solid #efefef;
   }
   .el-aside::-webkit-scrollbar {
@@ -54,8 +54,9 @@ export default {
     border-radius: 8px;
   }
   .el-main {
-    background-color: #E9EEF3;
+    background-color: #f0f2f5;
     color: #333;
+    padding: 15px;
   }
   body > .el-container {
     margin-bottom: 40px;

@@ -4,7 +4,7 @@
     <div class="logo-min" v-show="isCollapse"><img src="../assets/logo.png" alt=""></div>
     <el-menu
       unique-opened
-      background-color="#FAFBFC"
+      background-color="#fff"
       text-color="#333"
       active-text-color="#000"
       @open="handleOpen"
@@ -75,7 +75,7 @@ export default {
 element.style {
   padding-left: 20px;
   color: #333;
-  background-color: #FAFBFC;
+  background-color: #fff;
 }
 .el-submenu__title i {
   color: #666;
@@ -85,11 +85,11 @@ element.style {
 }
 .el-menu-item.is-active {
   color: #333;
-  background: #EDF0F3 !important;
+  background: #e6f2fe !important;
 }
 .router-link-active li {
   color: #333;
-  background: #EDF0F3 !important;
+  background: #e6f2fe !important;
 }
 .router-link-active i,
 .router-link-active span {
@@ -97,6 +97,6 @@ element.style {
 }
 .el-menu-item:hover,
 .el-submenu__title:hover {
-  background: #EDF0F3 !important;
+  background: #e6f2fe !important;
 }
 </style>

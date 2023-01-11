@@ -26,7 +26,10 @@
 
           <el-table-column label="场馆" width="200">
             <template slot-scope="scope">
-              <div>{{ getShopName(scope.row.shopNum) }}</div>
+              <div v-if="scope.row.shopNum">
+                {{ getShopName(scope.row.shopNum) }}
+              </div>
+              <div v-else>管理中心</div>
             </template>
           </el-table-column>
           <el-table-column label="菜单权限">
@@ -48,11 +51,11 @@
 
           <el-table-column label="操作" width="150">
             <template slot-scope="scope">
-              <el-button size="mini" type="primary" @click="edit(scope.row)"
+              <el-button size="small" type="primary" @click="edit(scope.row)"
                 >编辑</el-button
               >
               <el-button
-                size="mini"
+                size="small"
                 type="danger"
                 @click="removData(scope.row)"
                 >删除</el-button

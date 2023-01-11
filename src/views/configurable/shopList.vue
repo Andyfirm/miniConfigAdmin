@@ -15,9 +15,9 @@
           <el-table-column
             prop="imgphone"
             label="场馆电话"
-            width="120"
+            width="140"
           ></el-table-column>
-          <el-table-column label="场馆图片" width="80">
+          <el-table-column label="场馆图片" width="100">
             <template slot-scope="scope">
               <img
                 class="imgList"
@@ -27,7 +27,7 @@
               />
             </template>
           </el-table-column>
-          <el-table-column label="场馆说明" width="100">
+          <el-table-column label="场馆说明" width="120">
             <template slot-scope="scope">
               <el-popover trigger="hover" placement="top" width="200px">
                 <div
@@ -36,12 +36,12 @@
                   v-html="scope.row.venuedetails"
                 ></div>
                 <div slot="reference" class="name-wrapper">
-                  <el-tag size="medium">场馆说明</el-tag>
+                  <el-tag size="small">场馆说明</el-tag>
                 </div>
               </el-popover>
             </template>
           </el-table-column>
-          <el-table-column label="当前状态" width="140">
+          <el-table-column label="当前状态" width="180">
             <template slot-scope="scope">
               <el-switch
                 :value="scope.row.isWeb"
@@ -58,7 +58,7 @@
             <template slot-scope="scope">
               <el-button
                 type="primary"
-                size="mini"
+                size="small"
                 @click="edit(scope.row)"
                 >编辑</el-button
               >
@@ -143,7 +143,7 @@
             <el-button
               type="success"
               icon="el-icon-search" circle
-              size="mini"
+              size="small"
               @click="searchKeyword"
               style="margin:6px 10px;"
               ></el-button

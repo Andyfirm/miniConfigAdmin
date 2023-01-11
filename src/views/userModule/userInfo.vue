@@ -30,24 +30,24 @@
             <template slot-scope="scope">
               <el-button
               type="primary"
-              size="mini"
+              size="small"
               @click="edit(scope.row)"
               >修改密码</el-button
             >
             <el-button
               v-if="scope.row.role != role"
               type="primary"
-              size="mini"
+              size="small"
               @click="edit2(scope.row)"
               >修改角色</el-button
             >
-            <el-button type="warning" size="mini" @click="edit3(scope.row)"
+            <el-button type="warning" size="small" @click="edit3(scope.row)"
               >修改手机号</el-button
             >
             <el-button
               v-if="scope.row.role != role"
               type="danger"
-              size="mini"
+              size="small"
               @click="removData(scope.row)"
               >删除</el-button
             >
@@ -56,7 +56,7 @@
         </el-table>
       </el-row>
       <!-- 分页 -->
-      <el-row>
+      <!-- <el-row>
         <el-col :offset="14" :span="10">
           <el-pagination
             style="float: right; margin-top: 20px"
@@ -71,7 +71,7 @@
           >
           </el-pagination>
         </el-col>
-      </el-row>
+      </el-row> -->
     </el-card>
     <el-dialog :title="this.title" :visible.sync="dialogVisible" width="1000px">
       <el-form
@@ -268,7 +268,8 @@ export default {
           { required: true, message: "请选择显示状态", trigger: "blur" },
         ],
         role: [{ required: true, message: "请选择显示状态", trigger: "blur" }],
-      }
+      },
+      shopList: []
     }
   },
   components: {
