@@ -38,3 +38,19 @@ export const updateEUserPassword = (data) => ajax('/infe/updateEUserPassword', d
 export const updateEJtInfo = (data) => ajax('/infe/updateEJtInfo', data, 'post', {contentType: 'multipart/form-data'}) // 编辑员工信息-教练
 export const getEBreakTime = (data) => ajax('/infe/getEBreakTime', data) // 查询教练休息时间
 export const insertEBreakTime = (data) => ajax('/infe/insertEBreakTime', data, 'post') // 新增教练休息时间
+// 票模块
+export const getTicketType = (data) => ajax('/ticket/getTicketType', data) // 查询购票类型列表
+export const insertTicketType = (data) => ajax('/ticket/insertTicketType', data, 'post') // 新增票类型
+export const updateTicketType = (data) => ajax('/ticket/updateTicketType', data, 'post') // 修改票类型
+export const getOnlineTicketInfo = (data) => ajax('/ticket/getOnlineTicketInfo', data) // 查询票列表
+export const getSaleTicketExplanation = (data) => ajax('/ticket/getSaleTicketExplanation', data) // 查询购票说明
+export const updateSaleTicketExplanation = (data) => ajax('/ticket/updateSaleTicketExplanation', data, 'post') // 修改购票说明
+export const getTbAppointConfig = (data) => ajax('/ticket/getTbAppointConfig', data, 'post') // 查询退款设置列表
+export const insertTbAppointConfig = (data) => ajax('/ticket/insertTbAppointConfig', data, 'post') // 增加退款设置
+export const updateTbAppointConfig = (data) => ajax('/ticket/updateTbAppointConfig', data, 'post') // 修改退款设置
+export const deleteTbAppointConfig = (data) => ajax('/ticket/deleteTbAppointConfig', data, 'post') // 删除退款设置
+export const getInfCs = (data) => ajax('/tuanke/getInfCs', data) // 查询线下卡种
+export const getTbCardTicket = (data) => ajax('/ticket/getTbCardTicket', data) // 查询会员卡购票限制列表
+export const insertTbCardTicket = (data) => ajax('/ticket/insertTbCardTicket', data, 'post') // 增加会员卡购票限制
+export const updateTbCardTicket = (data) => ajax('/ticket/updateTbCardTicket', data, 'post') // 修改会员卡购票限制
+export const deleteTbCardTicket = (data) => ajax('/ticket/deleteTbCardTicket', data, 'post') // 删除会员卡购票限制

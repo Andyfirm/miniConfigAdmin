@@ -16,13 +16,13 @@
         >
           <el-table-column label="序号" type="index" width="50"></el-table-column>
           <el-table-column label="场馆" width="300">
-          <template slot-scope="scope">
-            <div v-if="scope.row.shopNum">
-              {{ getShopName(scope.row.shopNum) }}
-            </div>
-            <div v-else>管理中心</div>
-          </template>
-        </el-table-column>
+            <template slot-scope="scope">
+              <div v-if="scope.row.shopNum">
+                {{ getShopName(scope.row.shopNum) }}
+              </div>
+              <div v-else>管理中心</div>
+            </template>
+          </el-table-column>
           <el-table-column label="账号" prop="username"></el-table-column>
           <el-table-column label="手机号" prop="mobile"></el-table-column>
           <el-table-column label="角色" prop="remark"></el-table-column>
