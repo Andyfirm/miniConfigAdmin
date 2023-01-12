@@ -186,7 +186,7 @@
 </template>
 
 <script>
-import { getUser, searchRole, UsergetVCode, empldeleteUser, insertUser, updateUser, updateUserMobile, updateUserRole } from '../../api/index'
+import { employeeGetUser, searchRole, UsergetVCode, empldeleteUser, insertUser, updateUser, updateUserMobile, updateUserRole } from '../../api/index'
 import SearchTop from '@/components/SearchTop.vue'
 export default {
   name: 'userInfo',
@@ -285,7 +285,7 @@ export default {
       this.getTableList()
     },
     async getTableList() {
-      const res = await getUser(this.params)
+      const res = await employeeGetUser(this.params)
       this.loading = false
       if (res.msg === 'success') {
         this.tableData = res.data

@@ -10,9 +10,10 @@
       @open="handleOpen"
       @close="handleClose"
       :collapse="isCollapse"
+      :default-active="$route.path"
       router
     >
-    <menu-list :routes="permission_routers"></menu-list>
+     <menu-list :routes="permission_routers"></menu-list>
     </el-menu>
   </div>
 </template>
